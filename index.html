@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>AutoCAD Exchange</title>
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/jScrollPane.css" />
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jScrollPane.js"></script>
+<script type="text/javascript" src="js/jAcad.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<body>
+<table width="920" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#505254">
+  <tr>
+    <td><img src="images/header.png" width="920" height="70" alt="AutoCAD"  /></td>
+  </tr>
+  <tr>
+    <td><img src="images/banner.png" width="920" height="120" alt="标题"  /></td>
+  </tr>
+  <tr>
+    <td><table width="920" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="306" height="50" background="images/work_bg.png"><div class="header_txt_1" id="work">工作</div></td>
+        <td width="308" height="50" background="images/learn_bg.png"><div class="header_txt_2" id="work">了解</div></td>
+        <td width="306" height="50" background="images/extend_bg.png"><div class="header_txt_2" id="work">扩展</div></td>
+      </tr>
+      <tr class="table_bg">
+        <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="table_cell_left"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_con_cell">
+                  <tr>
+                    <td class="table_con_cell_txt" colspan="2">
+                    <a href="javascript:acadNewFile()"><img src="images/new.png" width="32" height="32" alt="新建"  /><span>新建</span></a></td>
+                  </tr>
+                  <tr>
+                    <td class="table_con_cell_txt" colspan="2">
+                    <a href="javascript:acadOpenFile()"><img src="images/open.png" width="32" height="32" alt="打开"  /><span>打开</span></a></td>
+                  </tr>
+                  <tr>
+                    <td class="table_con_cell_txt" colspan="2">
+                    <a href="javascript:acadOpenLocalSample()"><img src="images/open.png" width="32" height="32" alt="打开样例文件"  /><span>打开样例文件</span></a></td>
+                  </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td height="15"><img src="images/spacer.png" width="1" height="1" alt=""  /></td>
+              </tr>
+              <tr>
+                <td class="table_header">最近使用的文件</td>
+              </tr>
+              <tr>
+                <td class="table_text_bg5"></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td class="table_cell_2a">
+				<div class="container" id="recentfiles">
+				<div class="content">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" id="recentfilestable" class="scrolltable1_bg"></table>
+				</div>
+				</div>
+			</td>
+          </tr>
+          <tr>
+            <td height="12px"><img src="images/spacer.png" width="1" height="1" alt=""  /></td>
+          </tr>
+        </table></td>
+        <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="table_cell"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="table_header_whatsnew">精选主题</td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td class="table_cell_2b">
+                <div class="container1" id="essenvideos">
+                <div class="content1">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="scrolltable2_bg">
+                  <tr>
+                    <td width="20%" class="icon1"><a href="javascript:acadOpenHelp('AboutModelDocumentation')"><img src="images/icon.png" width="32" height="32"/></a></td>
+                    <td width="80%" class="table_text_bg"><a href="javascript:acadOpenHelp('AboutModelDocumentation')"> <span class="table_text_h">模型文档</span><br/><span class="table_text_n">从不同的三维模型创建图形。</span></a></td>
+                  </tr>
+                  <tr>
+                    <td height="2px"><img src="images/spacer.png" width="1" height="1" /></td>
+                    <td height="2px"><img src="images/spacer.png" width="1" height="1" /></td>
+                  </tr>
+                  <tr>
+                    <td width="20%" class="icon1"><a href="javascript:acadOpenHelp('AboutWorkingWithDrawingsUsingAutodeskCloud')"><img src="images/icon.png" width="32" height="32"/></a></td>
+                    <td width="80%" class="table_text_bg"><a href="javascript:acadOpenHelp('AboutWorkingWithDrawingsUsingAutodeskCloud')"> <span class="table_text_h">自定义同步</span><br/><span class="table_text_n">与联机 Autodesk<sup>&reg;</sup> 360 帐户同步自定义设置。</span> </a></td>
+                  </tr>
+                  <tr>
+                    <td height="2px"><img src="images/spacer.png" width="1" height="1" /></td>
+                    <td height="2px"><img src="images/spacer.png" width="1" height="1" /></td>
+                  </tr>
+                  <tr>
+                    <td width="20%" class="icon1"><a href="javascript:acadOpenHelp('AboutWorkingWithDrawingsUsingAutodeskCloud')"><img src="images/icon.png" width="32" height="32"/></a></td>
+                    <td width="80%" class="table_text_bg"><a href="javascript:acadOpenHelp('AboutWorkingWithDrawingsUsingAutodeskCloud')"> <span class="table_text_h">图形同步</span><br/><span class="table_text_n">与联机 Autodesk<sup>&reg;</sup> 360 帐户同步图形。</span> </a></td>
+                  </tr>
+                  <tr>
+                    <td height="2px"><img src="images/spacer.png" width="1" height="1" /></td>
+                    <td height="2px"><img src="images/spacer.png" width="1" height="1" /></td>
+                  </tr>
+                  <tr>
+                    <td width="20%" class="icon1"><a href="javascript:acadOpenHelp('AboutUsingAutoCADWS')"><img src="images/icon.png" width="32" height="32"/></a></td>
+                    <td width="80%" class="table_text_bg"><a href="javascript:acadOpenHelp('AboutUsingAutoCADWS')"> <span class="table_text_h">AutoCAD<sup>&reg;</sup> WS</span><br/>
+                      <span class="table_text_n">使用 AutoCAD<sup>&reg;</sup> WS 应用程序联机工作。</span> </a></td>
+                  </tr>
+                  <tr>
+                    <td height="2px"><img src="images/spacer.png" width="1" height="1" /></td>
+                    <td height="2px"><img src="images/spacer.png" width="1" height="1" /></td>
+                  </tr>
+                  <tr>
+                    <td width="20%" class="icon1"><a href="javascript:acadOpenHelp('SharedAboutInfoCenter')"><img src="images/icon.png" width="32" height="32"/></a></td>
+                    <td width="80%" class="table_text_bg"><a href="javascript:acadOpenHelp('SharedAboutInfoCenter')"> <span class="table_text_h">Autodesk<sup>&reg;</sup> Exchange 应用程序 </span><br/><span class="table_text_n">查找要与 Autodesk<sup>&reg;</sup> 一起使用的各种应用程序。</span> </a></td>
+                  </tr>
+                  <tr>
+                    <td height="2px"><img src="images/spacer.png" width="1" height="1" /></td>
+                    <td height="2px"><img src="images/spacer.png" width="1" height="1" /></td>
+                  </tr>
+                  <tr>
+                    <td width="20%" class="icon1"><a href="javascript:acadOpenHelp('AboutEnteringCommandsInCommandWindow')"><img src="images/icon.png" width="32" height="32"/></a></td>
+                    <td width="80%" class="table_text_bg"><a href="javascript:acadOpenHelp('AboutEnteringCommandsInCommandWindow')"> <span class="table_text_h">命令行增强功能</span><br/><span class="table_text_n">体验增强的命令行界面。</span> </a></td>
+                  </tr>
+                  <tr>
+                    <td height="2px"><img src="images/spacer.png" width="1" height="1" /></td>
+                    <td height="2px"><img src="images/spacer.png" width="1" height="1" /></td>
+                  </tr>
+                  <tr>
+                    <td width="20%" class="icon1"><a href="javascript:acadOpenHelp('AboutEditingAssociativeArrays')"><img src="images/icon.png" width="32" height="32"/></a></td>
+                    <td width="80%" class="table_text_bg"><a href="javascript:acadOpenHelp('AboutEditingAssociativeArrays')"> <span class="table_text_h">关联阵列</span><br/><span class="table_text_n">创建在阵列中排列的对象的副本。</span> </a></td>
+                  </tr><tr>
+                    <td height="2px"><img src="images/spacer.png" width="1" height="1" /></td>
+                    <td height="2px"><img src="images/spacer.png" width="1" height="1" /></td>
+                  </tr>
+                  <tr>
+                    <td width="20%" class="icon1"><a href="javascript:acadOpenHelp('AboutCreatingAndAttachingPointCloudData')"><img src="images/icon.png" width="32" height="32"/></a></td>
+                    <td width="80%" class="table_text_bg"><a href="javascript:acadOpenHelp('AboutCreatingAndAttachingPointCloudData')"> <span class="table_text_h">点云</span><br/><span class="table_text_n">创建现有建筑和对象的三维表达。</span> </a></td>
+                  </tr><tr>
+                    <td height="2px"><img src="images/spacer.png" width="1" height="1" /></td>
+                    <td height="2px"><img src="images/spacer.png" width="1" height="1" /></td>
+                  </tr>
+                  <tr>
+                    <td width="20%" class="icon1"><a href="javascript:acadOpenHelp('AboutEditingWithGrips')"><img src="images/icon.png" width="32" height="32"/></a></td>
+                    <td width="80%" class="table_text_bg"><a href="javascript:acadOpenHelp('AboutEditingWithGrips')"> <span class="table_text_h">多功能夹点</span><br/><span class="table_text_n">使用夹点和夹点模式操纵对象。</span> </a></td>
+                  </tr>
+                </table>
+              </div>
+            </div></td>
+          </tr>
+          <tr>
+            <td class="table_cell_1a"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="15"><img src="images/spacer.png" width="1" height="1" alt=""  /></td>
+              </tr>
+              <tr>
+            <td class="table_text_bg6"><span class="class1"><a href="http://www.autodesk.com/autocad-tutorials">联机资源</a></span></td>
+          </tr>
+              <tr>
+                <td height="12px"><img src="images/spacer.png" width="1" height="1" alt=""  /></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+        <td class="table_cell"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><img src="images/autodeskexchange.png" width="260" height="45" alt="2013 中的新增内容"  /></td>
+          </tr>
+          <tr>
+            <td class="table_text_bg2"><span class="table_text_n">利用 Autodesk Exchange 应用程序的应用程序和插件扩展 AutoCAD。</span></td>
+          </tr>
+          <tr>
+            <td class="table_text_bg2a" height="48" valign="top"><span class="class1"><a href="http://apps.exchange.autodesk.com/apps/v1/homepage?productline=ACD&amp;release=2013&amp;language=cn">浏览以查找应用程序</a></span></td>
+          </tr>
+          <tr>
+            <td height="15"><img src="images/spacer.png" width="1" height="1" alt=""  /></td>
+          </tr>
+          <tr>
+            <td><img src="images/autodeskcloud.png" width="260" height="45" alt="2013 中的新增内容"  /></td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="table_text_bg3"><span class="table_text_n">对设计文件进行联机存储、共享、查看和协作。</span></td>
+              </tr>
+              <tr>
+                <td class="table_text_bg3a" height="47" valign="top"><span class="class1"><a href="http://360.autodesk.com">快速入门</a></span></td>
+              </tr>
+              <tr>
+                <td height="15"><img src="images/spacer.png" width="1" height="1" alt=""  /></td>
+              </tr>
+              <tr>
+                <td class="table_header_stayconn">与 AutoCAD 连接</td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="table_text_bg7"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td colspan="7" height="5px"><img src="images/spacer.png" width="1" height="1" /></td>
+                        </tr>
+                      <tr>
+                        <td width="4%" height="27"><img src="images/spacer.png" width="1" height="1" alt=""  /></td>
+                        <td width="100%"><span class="class1"><a href="http://www.autodesk.com.cn/autocad">AutoCAD 产品中心</a></span></td>
+                        <td width="4%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td colspan="7" height="5px"><img src="images/spacer.png" width="1" height="1" /></td>
+                        </tr>
+                    </table></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td height="12"><img src="images/spacer.png" width="1" height="1" alt=""  /></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>
+		<table width="920px" height="36px" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="18" class="footer_bg">&nbsp;</td>
+          <td width="288" class="footer_bg"><input type="checkbox" name="display_at_startup" id="display_at_startup" />
+            <label for="display_at_startup"><span class="footer_chkbox_txt">启动时显示</span></label>
+          </td>
+          <td width="313" class="footer_bg">&nbsp;</td>
+          <td width="280" class="footer_bg" align="right">
+          <input type="submit" class="button" id="close_button" value="关闭"  /></td>
+          <td width="21" class="footer_bg">&nbsp;</td>
+        </tr>
+      </table>
+	</td>
+  </tr> 
+</table>
+</body>
+</html>
